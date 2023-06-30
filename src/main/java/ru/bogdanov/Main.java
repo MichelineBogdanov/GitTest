@@ -15,5 +15,9 @@ public class Main {
             // for you, but you can always add more by pressing Ctrl+F8.
             System.out.println("i = " + i);
         }
+
+        Example example = new Example(1, 0);
+        double divide = example.divide();
+        System.out.println(divide);
     }
 }
