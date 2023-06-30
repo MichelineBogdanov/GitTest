@@ -19,5 +19,12 @@ public class Main {
         Example example = new Example(1, 0);
         double divide = example.divide();
         System.out.println(divide);
+
+        MyCollection<Integer> ints = new MyCollection<>();
+        ints.add(12);
+        ints.add(10);
+        ints.add(8);
+        System.out.println(ints);
+        System.out.println(ints.getSize());
     }
 }
