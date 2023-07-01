@@ -21,10 +21,11 @@ public class Main {
         System.out.println(divide);
 
         MyCollection<Integer> ints = new MyCollection<>();
-        ints.add(12);
-        ints.add(10);
-        ints.add(8);
+        for (int i = 0; i < 16; i++) {
+            ints.add(i);
+        }
         System.out.println(ints);
         System.out.println(ints.getSize());
+
     }
 }

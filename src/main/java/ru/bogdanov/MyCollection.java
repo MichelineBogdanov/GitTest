@@ -12,6 +12,12 @@ public class MyCollection<T> {
     }
 
     public void add(T element) {
+        int length = mass.length;
+        if (size == length - 1) {
+            Object[] newMass = new Object[length * 2];
+            System.arraycopy(mass, 0, newMass, 0, mass.length);
+            mass = newMass;
+        }
         mass[size] = element;
         size++;
     }
